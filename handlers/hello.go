@@ -20,7 +20,7 @@ func (p *Hello) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	Test App	
 </div>
 
-<div class="my-index">My Index Is</div>
+<div class="my-index">Index Number For The App Is</div>
 
 <div class="index">%d</div>
 <div class="mid-color">Uptime: %s</div>
