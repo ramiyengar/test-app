@@ -7,7 +7,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: citizen-ofplanet-earth/cf-cli-action@master
+    - uses: citizen-ofplanet-earth/cf-cli-action@v2
       with:
         cf_api: https://api.35.192.46.62.xip.io
         cf_username: admin
