@@ -4,14 +4,14 @@
   uses: citizen-of-planet-earth/cf-cli-action@v2
   with:
     # Target API Endpoint of Cloud Foundry
-    cf_api: 
+    cf_api: api.35.192.46.62.xip.io
     # Username for API authentication
-    cf_username: 
+    cf_username: admin
     # Password for API authentication
-    cf_password: 
+    cf_password: password
     # Target Organization
-    cf_org: # optional
+    cf_org: livestream
     # Target Space
-    cf_space: # optional
+    cf_space: ram
     # Command to run using CF CLI
-    command: 
+    command: cf push
