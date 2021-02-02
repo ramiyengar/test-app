@@ -14,4 +14,4 @@ jobs:
         cf_password: password
         cf_org: livestream
         cf_space: ram
-        command: push
+        command: push -f manifest.yml
