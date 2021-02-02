@@ -1,18 +1,17 @@
 name: Deploy Using Actions Test
-
 on:
   push:
     branches:
       - master
-
 jobs:
-  runs-on: ubuntu-18.04
-  steps:
-  - uses: citizen-ofplanet-earth/cf-cli-action@master
-    with:
-      cf_api: https://api.35.192.46.62.xip.io
-      cf_username: admin
-      cf_password: password
-      cf_org: livestream
-      cf_space: ram
-      command: push
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: citizen-ofplanet-earth/cf-cli-action@master
+      with:
+        cf_api: https://api.35.192.46.62.xip.io
+        cf_username: admin
+        cf_password: password
+        cf_org: livestream
+        cf_space: ram
+        command: push
