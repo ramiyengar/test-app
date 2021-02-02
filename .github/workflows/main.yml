@@ -1,17 +1,18 @@
-- name: CF CLI Action
-  # You may pin to the exact commit or the version.
-  # uses: citizen-of-planet-earth/cf-cli-action@3c7cc1a77152f9157b0c33b32d3b2b5fbdc56dca
-  uses: citizen-of-planet-earth/cf-cli-action@v2
-  with:
-    # Target API Endpoint of Cloud Foundry
-    cf_api: api.35.192.46.62.xip.io
-    # Username for API authentication
-    cf_username: admin
-    # Password for API authentication
-    cf_password: password
-    # Target Organization
-    cf_org: livestream
-    # Target Space
-    cf_space: ram
-    # Command to run using CF CLI
-    command: cf push
+name: Deploy Using Actions Test
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  runs-on: ubuntu-18.04
+  steps:
+  - uses: citizen-ofplanet-earth/cf-cli-action@master
+    with:
+      cf_api:https://api.35.192.46.62.xip.io
+      cf_username: admin
+      cf_password: password
+      cf_org: livestream
+      cf_space: ram
+      command: push
