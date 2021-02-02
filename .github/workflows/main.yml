@@ -10,7 +10,7 @@ jobs:
   steps:
   - uses: citizen-ofplanet-earth/cf-cli-action@master
     with:
-      cf_api:https://api.35.192.46.62.xip.io
+      cf_api: https://api.35.192.46.62.xip.io
       cf_username: admin
       cf_password: password
       cf_org: livestream
