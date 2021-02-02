@@ -15,4 +15,4 @@ jobs:
         cf_password: password
         cf_org: livestream
         cf_space: ram
-        command: push -f test-app/manifest.yml 
+        command: push
