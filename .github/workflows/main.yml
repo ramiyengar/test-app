@@ -13,6 +13,6 @@ jobs:
         cf_api: https://api.34.70.72.42.xip.io
         cf_username: ${{ secrets.CF_ADMIN_EMAIL }}
         cf_password: ${{ secrets.CF_ACCESS_PASSWORD }}
-        cf_org: livestream
-        cf_space: ram
+        cf_org: foo
+        cf_space: haha
         command: push
