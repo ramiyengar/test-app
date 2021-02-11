@@ -10,9 +10,9 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ram-demos/cf-cli-action@master
       with:
-        cf_api: https://api.35.192.46.62.xip.io
-        cf_username: admin
-        cf_password: password
+        cf_api: https://api.34.70.72.42.xip.io
+        cf_username: ${{ secrets.CF_ADMIN_EMAIL }}
+        cf_password: ${{ secrets.CF_ACCESS_PASSWORD }}
         cf_org: livestream
         cf_space: ram
         command: push
