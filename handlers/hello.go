@@ -17,7 +17,7 @@ func (p *Hello) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	styledTemplate.Execute(w, Body{Body: fmt.Sprintf(`
 <div class="hello">
-	Test App Deployed By Jenkins	
+	Test App Deployed By Jenkins-	
 </div>
 
 <div class="my-index">Index Number For The App Is</div>
