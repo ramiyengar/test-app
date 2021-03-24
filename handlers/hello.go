@@ -17,10 +17,10 @@ func (p *Hello) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	styledTemplate.Execute(w, Body{Body: fmt.Sprintf(`
 <div class="hello">
-	Test App	
+	Test App Deployed By Jenkins	
 </div>
 
-<div class="my-index">Ram Changed This - Index Number For The App Is</div>
+<div class="my-index">Index Number For The App Is</div>
 
 <div class="index">%d</div>
 <div class="mid-color">Uptime: %s</div>
