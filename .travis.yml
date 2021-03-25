@@ -1,0 +1,9 @@
+deploy:
+  provider: cloudfoundry
+  username: admin
+  password: password
+  api: http://api.35.192.46.62.xip.io --skip-ssl-validation
+  organization: SampleOrg
+  space: ram
+  edge: true # opt in to dpl v2
+  app_name: foo-f
